@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  width: 320px;
+  padding: 14px 18px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.search-box input:focus {
+  border-color: #333;
+}
+
+.search-box button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  background: q
+  rgb(220, 113, 14);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  transform: translateY(-2px);
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
